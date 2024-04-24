@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fanuc_robot_arm_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0037623118237343 0.0233649736579788 0.09930339280761"
+        rpy="0 0 0" />
+      <mass
+        value="5.21455413636668" />
+      <inertia
+        ixx="0.0818178211767607"
+        ixy="-0.000851315665215272"
+        ixz="0.000518444431029705"
+        iyy="0.0612011535126665"
+        iyz="-0.00441285447562061"
+        izz="0.113362518054972" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="0.0101951506640098 -0.0208453475047208 -0.18007813578874"
+        rpy="0 0 0" />
+      <mass
+        value="18.4702468312934" />
+      <inertia
+        ixx="0.330887573871885"
+        ixy="-0.0270508177878318"
+        ixz="0.0159318030824333"
+        iyy="0.334957542617796"
+        iyz="-0.0413419605045573"
+        izz="0.295774467915714" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.146953882032411"
+      rpy="-3.14159265358979 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="300"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="-0.0471353094577844 -0.121307565669711 0.354593614984901"
+        rpy="0 0 0" />
+      <mass
+        value="20.7427711895469" />
+      <inertia
+        ixx="1.92563320831989"
+        ixy="-0.0232271081933053"
+        ixz="0.048431875875947"
+        iyy="1.96865501197754"
+        iyz="-0.0333749806624234"
+        izz="0.129778465913495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="revolute">
+    <origin
+      xyz="0.075 0.065313 -0.27805"
+      rpy="3.1416 0.22939 0" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.745"
+      upper="1.57"
+      effort="200"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="0.143587699747286 -0.0916697601593339 -0.11605729929243"
+        rpy="0 0 0" />
+      <mass
+        value="13.1776759699531" />
+      <inertia
+        ixx="0.221888900638784"
+        ixy="0.0100438976958944"
+        ixz="0.0959036172551775"
+        iyy="0.274911922350814"
+        iyz="-0.00175836901768594"
+        izz="0.21338999313663" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.84"
+      rpy="3.1416 0.22939 0" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.308"
+      upper="3.141"
+      effort="200"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="0.274780728112461 0.0629089171374008 0.000290547256552864"
+        rpy="0 0 0" />
+      <mass
+        value="8.54560744143316" />
+      <inertia
+        ixx="0.0308369409844614"
+        ixy="-0.0313207929458279"
+        ixz="0.000268040055126923"
+        iyy="0.299735696666817"
+        iyz="2.093440209068E-05"
+        izz="0.303229737500155" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="revolute">
+    <origin
+      xyz="0.2955 -0.060313 -0.215"
+      rpy="0 0 0" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="200"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="0.0321199207608664 0.017752720732735 2.51878365498115E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.547224825812627" />
+      <inertia
+        ixx="0.00144308507188214"
+        ixy="0.000346649011812299"
+        ixz="9.44395760586892E-09"
+        iyy="0.00156975788378303"
+        iyz="1.51715406662823E-09"
+        izz="0.00135883143994367" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="revolute">
+    <origin
+      xyz="0.59436 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_4" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.570"
+      upper="1.570"
+      effort="200"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="-0.0910020055148162 0.000190800525516454 3.00522104691447E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.14313837078303" />
+      <inertia
+        ixx="0.000665726048444208"
+        ixy="1.64851183008346E-07"
+        ixz="9.28822928080864E-08"
+        iyy="0.000493473199509507"
+        iyz="-2.28435566561703E-06"
+        izz="0.000535719651817859" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_6"
+    type="continuous">
+    <origin
+      xyz="0.0286 0 0"
+      rpy="3.1416 0 -3.1416" />
+    <parent
+      link="Link_5" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0.0"
+      upper="0.0"
+      effort="200"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link_7">
+    <inertial>
+      <origin
+        xyz="-0.133893547911394 -0.0228342247351931 2.39469355456379E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.322031270645541" />
+      <inertia
+        ixx="3.81746907032006E-05"
+        ixy="1.3712824566115E-05"
+        ixz="-8.1224334398781E-14"
+        iyy="0.000281665029496672"
+        iyz="4.72922294772557E-15"
+        izz="0.000303748065866347" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.529411764705882 0.549019607843137 0.549019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/Link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_7"
+    type="prismatic">
+    <origin
+      xyz="-0.1132 -1E-05 0"
+      rpy="3.1416 0 0" />
+    <parent
+      link="Link_6" />
+    <child
+      link="Link_7" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0.01"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="LInk_8">
+    <inertial>
+      <origin
+        xyz="-0.133893547911394 0.0228342426650648 1.47263168326361E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.322031270645541" />
+      <inertia
+        ixx="3.81746907032003E-05"
+        ixy="-1.37128245661122E-05"
+        ixz="8.12268732471391E-14"
+        iyy="0.000281665029496673"
+        iyz="4.72938122428486E-15"
+        izz="0.000303748065866347" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/LInk_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.529411764705882 0.549019607843137 0.549019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_robot_arm_urdf/meshes/LInk_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_8"
+    type="prismatic">
+    <origin
+      xyz="-0.1132 1.0017E-05 0"
+      rpy="3.1416 0 0" />
+    <parent
+      link="Link_6" />
+    <child
+      link="LInk_8" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0.0"
+      upper="0.01"
+      effort="100"
+      velocity="3" />
+  </joint>
+</robot>
